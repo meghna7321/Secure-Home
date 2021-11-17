@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_mainbg"
+
+    tools:context=".HomeActivity">
+<!--    #7C95A6-->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Welcome"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/homeLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/quicksand"
+            android:gravity="end"
+            android:text="Logout"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/homeUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fontFamily="@font/quicksand"
+            android:text="User"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="570dp"
+           android:layout_marginTop="30dp"
+           android:paddingLeft="20dp"
+           android:paddingRight="20dp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="565dp">
+
+               <GridLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginEnd="0dp"
+                   android:layout_marginRight="0dp"
+                   android:layout_marginBottom="0dp"
+                   android:columnCount="2"
+                   android:rowCount="4">
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/homeDoor"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_row="0"
+                       android:layout_rowWeight="1"
+                       android:layout_column="0"
+                       android:layout_columnWeight="1"
+                       android:layout_gravity="fill"
+                       android:layout_margin="8dp"
+                       app:cardBackgroundColor="#d9d9d9"
+                       app:cardCornerRadius="8dp"
+                       app:cardElevation="9dp">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center_vertical|center_horizontal"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="80dp"
+                               android:layout_height="110dp"
+                               android:src="@drawable/door" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/quicksand_medium"
+                               android:paddingBottom="7dp"
+                               android:text="Door"
+                               android:textColor="@color/black" />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/homeWindow"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_row="0"
+                       android:layout_rowWeight="1"
+                       android:layout_column="1"
+                       android:layout_columnWeight="1"
+                       android:layout_gravity="fill"
+                       android:layout_margin="8dp"
+                       app:cardBackgroundColor="#d9d9d9"
+                       app:cardCornerRadius="8dp"
+                       app:cardElevation="9dp">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center_vertical|center_horizontal"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="80dp"
+                               android:layout_height="110dp"
+                               android:src="@drawable/window" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/quicksand_medium"
+                               android:paddingBottom="7dp"
+                               android:text="Window"
+                               android:textColor="@color/black"
+
+                               />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/homeMotion"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_row="1"
+                       android:layout_rowWeight="1"
+                       android:layout_column="0"
+                       android:layout_columnWeight="1"
+                       android:layout_gravity="fill"
+                       android:layout_margin="8dp"
+                       app:cardBackgroundColor="#d9d9d9"
+                       app:cardCornerRadius="8dp"
+                       app:cardElevation="9dp">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center_vertical|center_horizontal"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="70dp"
+                               android:layout_height="110dp"
+                               android:src="@drawable/motion" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/quicksand_medium"
+                               android:paddingBottom="7dp"
+                               android:text="Motion"
+                               android:textColor="@color/black" />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/homeFire"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_row="1"
+                       android:layout_rowWeight="1"
+                       android:layout_column="1"
+                       android:layout_columnWeight="1"
+                       android:layout_gravity="fill"
+                       android:layout_margin="8dp"
+                       app:cardBackgroundColor="#d9d9d9"
+                       app:cardCornerRadius="8dp"
+                       app:cardElevation="9dp">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center_vertical|center_horizontal"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="70dp"
+                               android:layout_height="110dp"
+                               android:src="@drawable/fire" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/quicksand_medium"
+                               android:paddingBottom="7dp"
+                               android:text="Fire"
+                               android:textColor="@color/black" />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/homeSmoke"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_row="2"
+                       android:layout_rowWeight="1"
+                       android:layout_column="0"
+                       android:layout_columnWeight="1"
+                       android:layout_gravity="fill"
+                       android:layout_margin="8dp"
+                       app:cardBackgroundColor="#d9d9d9"
+                       app:cardCornerRadius="8dp"
+                       app:cardElevation="9dp">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center_vertical|center_horizontal"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="80dp"
+                               android:layout_height="110dp"
+                               android:src="@drawable/smoke" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/quicksand_medium"
+                               android:paddingBottom="7dp"
+                               android:text="Smoke"
+                               android:textColor="@color/black" />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/homeGasLeak"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_row="2"
+                       android:layout_rowWeight="1"
+                       android:layout_column="1"
+                       android:layout_columnWeight="1"
+                       android:layout_gravity="fill"
+                       android:layout_margin="8dp"
+                       app:cardBackgroundColor="#d9d9d9"
+                       app:cardCornerRadius="8dp"
+                       app:cardElevation="9dp">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center_vertical|center_horizontal"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="70dp"
+                               android:layout_height="110dp"
+                               android:src="@drawable/gasleak" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/quicksand_medium"
+                               android:paddingBottom="7dp"
+                               android:text="Gas Leak"
+                               android:textColor="@color/black" />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/homeAlarms"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_row="3"
+                       android:layout_rowWeight="1"
+                       android:layout_column="0"
+                       android:layout_columnWeight="1"
+                       android:layout_gravity="fill"
+                       android:layout_margin="8dp"
+                       app:cardBackgroundColor="#d9d9d9"
+                       app:cardCornerRadius="8dp"
+                       app:cardElevation="9dp">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center_vertical|center_horizontal"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="70dp"
+                               android:layout_height="110dp"
+                               android:src="@drawable/alarm" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/quicksand_medium"
+                               android:paddingBottom="7dp"
+                               android:text="Alarms"
+                               android:textColor="@color/black" />
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+               </GridLayout>
+
+           </RelativeLayout>
+
+       </ScrollView>
+
+   </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navbar"
+        android:background="#fff"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_menu"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

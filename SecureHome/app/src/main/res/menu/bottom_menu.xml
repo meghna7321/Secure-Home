@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#000000">
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/ic_smart_home"
+        android:title="Home"
+        app:cnb_backgroundColor = "#C6A6ED"
+        app:cnb_iconColor="@color/purple_500"/>
+    <item
+        android:id="@+id/menuUser"
+        android:icon="@drawable/ic_users"
+        android:title="Users"
+        app:cnb_backgroundColor = "#C6A6ED"
+        app:cnb_iconColor="@color/purple_500"
+        />
+    <item
+        android:id="@+id/menuSettings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        app:cnb_backgroundColor = "#C6A6ED"
+        app:cnb_iconColor="@color/purple_500"
+         />
+
+</menu>
